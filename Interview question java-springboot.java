@@ -101,7 +101,7 @@ Encapsulation → Engine is hidden inside.
 Abstraction → You just use the steering wheel & pedals.
 Inheritance → ElectricCar inherits from Car.
 Polymorphism → start() works differently for PetrolCar vs ElectricCar.
-    
+    ----------------------------------------------
 3.what are primitive data types in java?
     Definition:
 Primitive data types in Java are the basic building blocks of data manipulation. They are not objects and hold
@@ -120,3 +120,49 @@ boolean	   1-bit (JVM specific)	false	boolean flag = true;	True/False values
     Real-world Example
 Think of primitive types as raw ingredients (sugar, flour, salt). They are basic and lightweight.
 Whereas objects (like String, ArrayList) are ready-made dishes created using those raw ingredients.
+--------------------------------------------------
+    3. Autoboxing and Unboxing in Java
+1. Autoboxing
+Definition:
+Autoboxing is the automatic conversion of a primitive type into its wrapper class object.
+
+✔ Happens when:
+You assign a primitive value to a wrapper object.
+You add primitives to collections (like ArrayList) which only work with objects.
+
+Example Code:
+public class AutoBoxingExample {
+    public static void main(String[] args) {
+        int num = 10;
+        Integer obj = num; // Autoboxing (int → Integer)
+
+        System.out.println("Primitive int: " + num);
+        System.out.println("Wrapper Integer: " + obj);
+    }
+}
+Real-world Example:
+Think of a primitive (int) as a coin, and a wrapper (Integer) as a gift box. Autoboxing is like putting the coin into the gift box automatically.
+
+2. Unboxing
+Definition:
+Unboxing is the automatic conversion of a wrapper class object into its corresponding primitive type.
+
+✔ Happens when:
+You assign a wrapper object back to a primitive variable.
+You perform arithmetic operations with wrapper objects.
+
+Example Code:
+public class UnboxingExample {
+    public static void main(String[] args) {
+        Integer obj = 20;
+        int num = obj; // Unboxing (Integer → int)
+
+        System.out.println("Wrapper Integer: " + obj);
+        System.out.println("Primitive int: " + num);
+    }
+}
+Real-world Example:
+If autoboxing is putting a coin into a gift box, then unboxing is taking the coin out of the gift box to use it.
+Autoboxing is automatic conversion from primitive → wrapper class (like int to Integer), and Unboxing is the reverse, wrapper class → primitive.
+They make working with collections and generics easier since collections only store objects.
+
