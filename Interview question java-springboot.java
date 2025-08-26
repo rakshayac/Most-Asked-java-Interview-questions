@@ -101,4 +101,22 @@ Encapsulation → Engine is hidden inside.
 Abstraction → You just use the steering wheel & pedals.
 Inheritance → ElectricCar inherits from Car.
 Polymorphism → start() works differently for PetrolCar vs ElectricCar.
+    
+3.what are primitive data types in java?
+    Definition:
+Primitive data types in Java are the basic building blocks of data manipulation. They are not objects and hold
+    simple values directly in memory. Java provides 8 primitive data types, which are predefined by the language.
 
+📊 List of Primitive Data Types
+Data Type	   Size	         Default Value	     Example	Used For
+byte	       8-bit	0	byte b = 10;	     Small integers (-128 to 127)
+short	      16-bit	0	short s = 1000;	      Larger range than byte
+int	           32-bit	0	int x = 50000;	       Common integer values
+long	      64-bit	0L	long l = 100000L;	     Very large integers
+float	      32-bit	0.0  float f = 3.14f;	Decimal values (single precision)
+double	      64-bit	0.0ddouble d = 3.14159;	Decimal values (double precision)
+char	     16-bit (Unicode)	'\u0000'	char c = 'A';	Single characters
+boolean	   1-bit (JVM specific)	false	boolean flag = true;	True/False values
+    Real-world Example
+Think of primitive types as raw ingredients (sugar, flour, salt). They are basic and lightweight.
+Whereas objects (like String, ArrayList) are ready-made dishes created using those raw ingredients.
