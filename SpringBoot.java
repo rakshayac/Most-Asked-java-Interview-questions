@@ -90,3 +90,15 @@ Spring Boot applications can be packaged as JARs or WARs, run on Docker containe
 
 ✅ In Short:
 Spring Boot = Fast + Simple + Production-ready + Microservices-friendly.
+3.what is @springbootapplication annotation?
+
+
+ChatGPT said:
+The @SpringBootApplication annotation is one of the most important annotations in Spring Boot. It acts as a shortcut that bundles three other core Spring annotations, making your setup simpler.
+
+🔑 What it does
+@SpringBootApplication is equivalent to using these three annotations together:
+
+@Configuration      // Marks the class as a source of bean definitions
+@EnableAutoConfiguration  // Enables Spring Boot's auto-configuration mechanism
+@ComponentScan      // Scans the package and sub-packages for Spring components, like @Controller, @Service, @Repository
